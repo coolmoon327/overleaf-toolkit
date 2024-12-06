@@ -3,7 +3,8 @@ services:
 
     sharelatex:
         restart: always
-        image: "${IMAGE}"
+        # image: "${IMAGE}"
+        image: tuetenk0pp/sharelatex-full
         container_name: sharelatex
         volumes:
             - "${OVERLEAF_DATA_PATH}:${OVERLEAF_IN_CONTAINER_DATA_PATH}"
